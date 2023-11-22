@@ -1,0 +1,41 @@
+<head>
+   <link href="style.css" rel="stylesheet" />
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="values">
+         <div class="values-item">
+            <input id="diapason1" type="text" oninput="inpOne()" onchange="changeOne()" class="rangeInp">
+            ₽
+         </div>
+         <div class="values-item">
+            <input id="diapason2" type="text" oninput="inpTwo()" onchange="changeTwo()" class="rangeInp">
+            ₽
+         </div>
+      </div>
+      <div class="container">
+         <div class="slider-track"></div>
+         <input type="range" data-min="0" data-max="1000" min="0" max="100" id="point-1" oninput="valueOne()"
+            class="range">
+         <input type="range" data-min="0" data-max="1000" min="0" max="100" id="point-2" oninput="valueTwo()"
+            class="range">
+      </div>
+   </div>
+
+   <!--Script-->
+   <script src="script.js"></script>
+   <!-- <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("sliderValue");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function () {
+         output.innerHTML = this.value;
+      }
+   </script> -->
+
+</body>
